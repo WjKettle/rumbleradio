@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Rumble Records</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="William Kettle's Final Project in Creative Computing" />
+  <meta name="keywords" content="radio station, website" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="/style/style.css" title="style" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="/script/script.js"></script>
+</head>
+<!--Facebook Feed Pluggin-->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="IC5au0pH"></script>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">Rumble<span class="logo_colour"> Radio</span></a></h1>
+          <h2>Making your speakers rumble</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">The Rumble</a></li>
+          <li><a href="/html/examples.html">Events</a></li>
+          <li><a href="/html/page.html">Past Shows</a></li>
+          <li><a href="/html/another_page.html">Another Page</a></li>
+          <li><a href="/html/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Social Feed</h3>
+        <h4>Facebook Page</h4>
+        <div class="fb-page" data-href="https://www.facebook.com/BILLYKETTLEDNB/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BILLYKETTLEDNB/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BILLYKETTLEDNB/">Billy Kettle</a></blockquote></div>
+        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        <p></p>
+        <h4>New Website Launched</h4>
+        <h5>July 1st, 2014</h5>
+        <p>2014 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Welcome to Rumble Radio</h1>
+        <p>This is the final Creative Project for William Kettle for his 3rd year of his BSc in Creative Computing from Goldsmiths, University of London</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              
+            <div class="item active">
+              <img src="/image/phonox.jpg" alt="Phononx">
+            </div>
+
+            <div class="item">
+              <img src="/images/fabric.jpeg" alt="Fabric">
+            </div>
+
+            <div class="item">
+              <img src="/images/printworks.jpg" alt="Printworks">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class = "player1">
+    <h2>Playing Static Files on The Webpage 1</h2>
+    <p>This static audio player is the first simple version that allows me to play static files stored on the computer</p>
+   
+    <div class="row">
+      <div class="column">
+        <img src="/images/cce.png" alt="Crowd Control Evenets" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="/images/from_streets_cover.jpg" alt="From The Streets Cover" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="/images/liquid.png" alt="Liquid Sessions" style="width:100%">
+      </div>
+    </div>
+        <!--Media Player-->
+        <audio src = "" controls id = "audioPlayer"></audio>
+        <ul id = "playlist">
+            <li class = "current-song"><a href = "/audio/song1.mp3">Song 1</a></li>
+            <li><a href = "/audio/song2.mp3">Song 2</a></li>
+            <li><a href = "/audio/song3.mp3">Song 3</a></li>
+        </ul>
+        <script>
+        audioPlayer();
+        </script>
+        </div>
+        
+        <div class = "player2">
+            <h2>Playing Static Files on The Webpage 1</h2>
+            <p>Another static audio player weith shuffling</p>
+                <audio src="" controls id="audioPlayer1" >
+                Sorry, your browser doesn't support html5!
+                </audio>
+                <ul id="playlist1">
+                    <li><a href="/audio/song1.mp3">Song1</a></li>
+                    <li><a href="/audio/song2.mp3">Song2</a></li>
+                    <li><a href="/audio/song3.mp3">Song3</a></li>
+                    <li><a href="/audio/song4.mp3">Song4</a></li>
+                    <li><a href="/audio/song5.mp3">Song5</a></li>
+                    <li><a href="/audio/song6.mp3">Song6</a></li>
+                    <li><a href="/audio/song7.mp3">Song7</a></li>
+                    <li><a href="/audio/song8.mp3">Song8</a></li>
+                    <li><a href="/audio/song9.mp3">Song9</a></li>
+                    <li><a href="/audio/song10.mp3">Song10</a></li>
+                    <li><a href="/audio/song11.mp3">Song11</a></li>
+                    <li><a href="/audio/song12.mp3">Song12</a></li>
+                    <li><a href="/audio/song13.mp3">Song13</a></li>
+                    <li><a href="/audio/song14.mp3">Song14</a></li>
+                    <li><a href="/audio/song15.mp3">Song15</a></li>        
+                </ul>
+                <a href="#" onclick="playlist.prevTrack();">Prev Track</a>
+                <a href="#" onclick="playlist.nextTrack();">Next Track</a>
+                <a href="#" onclick="playlist.toggleShuffle();">Toggle Shuffle</a>
+                <script>
+                    var config = {
+                      autoplay: true, 
+                        loop: true,
+                        shuffle: true
+                    };
+                    var playlist = new AudioPlaylist();
+                </script>
+        </div>
+                    <iframe src="http://134.122.97.191/public/rumble_radio/embed" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+        <!--
+        <div class = "stream">
+            <iframe src="http://134.122.97.191/public/rumble_radio/embed" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+        </div>
+        -->
+    <div id="footer">
+    </div>
+  </div>
+</body>
+</html>
