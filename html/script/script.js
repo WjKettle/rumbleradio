@@ -1,4 +1,32 @@
-        function audioPlayer(){
+/*code for image carosle*/
+var slideIndex = 2;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+/*Code for static player 1*/
+function audioPlayer(){
             var currentSong = 0;
             $("#audioPlayer")[0].src = $("#playlist li a")[0];
             //$("#audioPlayer")[0].play();
@@ -22,7 +50,7 @@
             });
         }
 
-/*
+/* Code for static player 1
     Default constructor configuration:
         autoplay: false,
         shuffle: false,
@@ -189,3 +217,89 @@ class AudioPlaylist{
         
     }
 }
+
+/*calendar code*/
+$(document).on('ready', function(){
+	event();
+})
+
+function event()
+{
+	$('.calendar-container .month .day a').on('click', function(){
+		$('body').addClass('is-event-view');
+		return false;
+	});
+	$('.event a').on('click', function(){
+		$('body').removeClass('is-event-view');
+		return false;
+	});
+}
+/*set times code*/
+/**
+ * Created by Kupletsky Sergey on 05.11.14.
+ *
+ * Material Design Responsive Table
+ * Tested on Win8.1 with browsers: Chrome 37, Firefox 32, Opera 25, IE 11, Safari 5.1.7
+ * You can use this table in Bootstrap (v3) projects. Material Design Responsive Table CSS-style will override basic bootstrap style.
+ * JS used only for table constructor: you don't need it in your project
+ */
+
+$(document).ready(function() {
+
+    var table = $('#table');
+
+    // Table bordered
+    $('#table-bordered').change(function() {
+        var value = $( this ).val();
+        table.removeClass('table-bordered').addClass(value);
+    });
+
+    // Table striped
+    $('#table-striped').change(function() {
+        var value = $( this ).val();
+        table.removeClass('table-striped').addClass(value);
+    });
+  
+    // Table hover
+    $('#table-hover').change(function() {
+        var value = $( this ).val();
+        table.removeClass('table-hover').addClass(value);
+    });
+
+    // Table color
+    $('#table-color').change(function() {
+        var value = $(this).val();
+        table.removeClass(/^table-mc-/).addClass(value);
+    });
+});
+
+// jQuery’s hasClass and removeClass on steroids
+// by Nikita Vasilyev
+// https://github.com/NV/jquery-regexp-classes
+(function(removeClass) {
+
+	jQuery.fn.removeClass = function( value ) {
+		if ( value && typeof value.test === "function" ) {
+			for ( var i = 0, l = this.length; i < l; i++ ) {
+				var elem = this[i];
+				if ( elem.nodeType === 1 && elem.className ) {
+					var classNames = elem.className.split( /\s+/ );
+
+					for ( var n = classNames.length; n--; ) {
+						if ( value.test(classNames[n]) ) {
+							classNames.splice(n, 1);
+						}
+					}
+					elem.className = jQuery.trim( classNames.join(" ") );
+				}
+			}
+		} else {
+			removeClass.call(this, value);
+		}
+		return this;
+	}
+
+})(jQuery.fn.removeClass);s
+
+
+
