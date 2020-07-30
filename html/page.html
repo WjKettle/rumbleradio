@@ -3,59 +3,53 @@
 
 <head>
   <title>Rumble Records</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="William Kettle's Final Project in Creative Computing" />
   <meta name="keywords" content="radio station, website" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="./style/style.css" title="style" />
-    <!--Facebook Feed Pluggin-->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="IC5au0pH"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script/script.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
 </head>
 
-<body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <h1><a href="/index.html">Rumble<span class="logo_colour"> Radio</span></a></h1>
-          <h2>Making your speakers rumble</h2>
+        <div id="sideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">The Rumble</a>
+          <a href="examples.html">Events</a>
+          <a href="page.html">Past Shows</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="contact.html">Contact Us</a>
         </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="index.html">The Rumble</a></li>
-          <li><a href="/examples.html">Events</a></li>
-          <li><a href="/page.html">Past Shows</a></li>
-          <li><a href="/another_page.html">Another Page</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-        <div id="site_content">
-      <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        <h3>Social Feed</h3>
-        <h4>Facebook Page</h4>
-        <div class="fb-page" data-href="https://www.facebook.com/BILLYKETTLEDNB/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BILLYKETTLEDNB/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BILLYKETTLEDNB/">Billy Kettle</a></blockquote></div>
-        <h4>New Staion Launched</h4>
-        <h5>July 1st, 20202</h5>
-        <p>2020 sees the lanuch of Rumble Radio.<br /><a href="#">Read more</a></p>
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-        </ul>
-        <h3>Search</h3>
-        <form method="post" action="#" id="search_form">
-          <p>
-            <input class="search" type="text" name="search_field" value="Enter keywords....." />
-            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-          </p>
-        </form>
-      </div>
+    
+        <div>
+        <nav class="topnav">
+      <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#ddd" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#ddd" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#ddd" stroke-width="5"/>
+        </svg>
+      </a>
+        <a href="index.html"><span class="logo"><img src="images/logo.png" width="100px" height="25px"> </span></a>
+       </nav>
+        </div>
+
+    <div class="container-carousel">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>    
+        
       <div id="content">
           <h2>Bloc2Bloc Stream</h2>
           <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBillyKettle%2Fbilly-kettle-bloc2bloc-radio-18-07-2020%2F" frameborder="0" ></iframe>
@@ -70,9 +64,14 @@
           <h2>Critical Sounds</h2>
           <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FBillyKettle%2Fbilly-kettle-critical-sound-mix-competition%2F" frameborder="0" ></iframe>
       </div>
-    </div>
+
+    
+        <div class = "stream">
+            <iframe src="http://134.122.97.191/public/rumble_radio/embed" frameborder="0" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+        </div>
+    
     <div id="footer">
     </div>
-  </div>
+
 </body>
 </html>

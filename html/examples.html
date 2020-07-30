@@ -3,130 +3,143 @@
 
 <head>
   <title>Rumble Records</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="William Kettle's Final Project in Creative Computing" />
   <meta name="keywords" content="radio station, website" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="/style/style.css" title="style" />
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
-  <script src="script/script.js"></script>
-    <!--Facebook Feed Pluggin-->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="IC5au0pH"></script>
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script/script.js"></script>   
+  
 </head>
 
-<body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <h1><a href="/index.html">Rumble<span class="logo_colour"> Radio</span></a></h1>
-          <h2>Making your speakers rumble</h2>
+        <div id="sideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">The Rumble</a>
+          <a href="examples.html">Events</a>
+          <a href="page.html">Past Shows</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="contact.html">Contact Us</a>
         </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="index.html">The Rumble</a></li>
-          <li><a href="/examples.html">Events</a></li>
-          <li><a href="/page.html">Past Shows</a></li>
-          <li><a href="/another_page.html">Another Page</a></li>
-          <li><a href="/contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="site_content">
-      <div class="sidebar">
-        <!-- insert your sidebar items here -->
-        <h3>Social Feed</h3>
-        <h4>Facebook Page</h4>
-        <div class="fb-page" data-href="https://www.facebook.com/BILLYKETTLEDNB/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BILLYKETTLEDNB/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BILLYKETTLEDNB/">Billy Kettle</a></blockquote></div>
-        <h4>New Staion Launched</h4>
-        <h5>July 1st, 20202</h5>
-        <p>2020 sees the lanuch of Rumble Radio.<br /><a href="#">Read more</a></p>
-        <h3>Useful Links</h3>
-        <ul>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-        </ul>
-        <h3>Search</h3>
-        <form method="post" action="#" id="search_form">
-          <p>
-            <input class="search" type="text" name="search_field" value="Enter keywords....." />
-            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-          </p>
-        </form>
-      </div>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-<div class="calendar-container">
-	<section class="months">
-		<div class="month">
-			<h2>July 2020</h2>
-			<span class="day label">S</span>
-			<span class="day label">M</span>
-			<span class="day label">T</span>
-			<span class="day label">W</span>
-			<span class="day label">T</span>
-			<span class="day label">F</span>
-			<span class="day label">S</span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day">1</span>
-			<span class="day">2</span>
-			<span class="day">3</span>
-			<span class="day">4</span>
-			<span class="day">5</span>
-			<span class="day">6</span>
-			<span class="day">7</span>
-			<span class="day">8</span>
-			<span class="day">9</span>
-			<span class="day">10</span>
-			<span class="day">11</span>
-			<span class="day today">12</span>
-			<span class="day">13</span>
-			<span class="day"><a href="#">14</a></span>
-			<span class="day">15</span>
-			<span class="day">16</span>
-			<span class="day">17</span>
-			<span class="day">18</span>
-			<span class="day">19</span>
-			<span class="day">20</span>
-			<span class="day">21</span>
-			<span class="day">22</span>
-			<span class="day">23</span>
-			<span class="day">24</span>
-			<span class="day">25</span>
-			<span class="day">26</span>
-			<span class="day">27</span>
-			<span class="day">28</span>
-			<span class="day">29</span>
-			<span class="day">30</span>
-			<span class="day">31</span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-			<span class="day empty"></span>
-		</div>
-	</section>
-</div>
-<div class="event">
-	<a href="#" class="back">back</a>
-	<h2>July 14th, 2020</h2>
-	<ul>
-		<li>build a dailyui</li>
-		<li>client deadline</li>
-	</ul>
-</div>
+    
+        <div>
+        <nav class="topnav">
+      <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#ddd" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#ddd" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#ddd" stroke-width="5"/>
+        </svg>
+      </a>
+        <a href="index.html"><span class="logo"><img src="images/logo.png" width="100px" height="25px"> </span></a>
+       </nav>
+        </div>
+
+    <ul class="main">
+  <li class="date">
+    <h3>August 20</h3>
+    <p>Schedule of Events</p>
+  </li>
+  <li class= "events">
+    <ul class="events-detail">
+      <li>
+        <a href="#">
+          <span class="event-time">Saturday 1st - </span>
+          <span class="event-name">Jungle Sessions</span>
+          <br />
+          <span class="event-location">Peckham Springs</span>
+        </a>
+      </li>
+       
+       <li>
+        <a href="#">
+          <span class="event-time">Friday 7th - </span>
+          <span class="event-name">House Sessions</span>
+          <br />
+          <span class="event-location">Fabric</span>
+        </a>
+      </li>
       
+       <li>
+        <a href="#">
+          <span class="event-time">Sunday 16th - </span>
+          <span class="event-name">Liquid Sessions</span>
+          <br />
+          <span class="event-location">Phonox</span>
+        </a>
+      </li>
+      
+       <li>
+        <a href="#">
+          <span class="event-time">Friday 21st - </span>
+          <span class="event-name">Garage Sessions</span>
+          <br />
+          <span class="event-location">Amersham Arms</span>
+        </a>
+      </li>
+    </ul>  
+    
+  
+  </li>
+         
+  
+  
+    <li class="date">
+    <h3>September 20</h3>
+    <p>Schedule of Events</p>
+  </li>
+  <li class= "events cf">
+    <ul class="events-detail">
+            <li>
+        <a href="#">
+          <span class="event-time">Saturday 1st - </span>
+          <span class="event-name">Jungle Sessions</span>
+          <br />
+          <span class="event-location">Peckham Springs</span>
+        </a>
+      </li>
+       
+       <li>
+        <a href="#">
+          <span class="event-time">Friday 7th - </span>
+          <span class="event-name">House Sessions</span>
+          <br />
+          <span class="event-location">Fabric</span>
+        </a>
+      </li>
+      
+       <li>
+        <a href="#">
+          <span class="event-time">Sunday 16th - </span>
+          <span class="event-name">Liquid Sessions</span>
+          <br />
+          <span class="event-location">Phonox</span>
+        </a>
+      </li>
+      
+       <li>
+        <a href="#">
+          <span class="event-time">Friday 21st - </span>
+          <span class="event-name">Garage Sessions</span>
+          <br />
+          <span class="event-location">Amersham Arms</span>
+        </a>
+      </li>
+    </ul>  
+    
+  
+  </li>
+         
+</ul>  
+        <div class = "stream">
+            <iframe src="http://134.122.97.191/public/rumble_radio/embed" frameborder="0" style="width: 100%; min-height: 150px; border: 0;"></iframe>
+        </div>
+    
     <div id="footer">
     </div>
-  </div>
+
 </body>
 </html>
